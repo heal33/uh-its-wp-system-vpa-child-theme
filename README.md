@@ -1,5 +1,5 @@
-# uh-its-wp-uhm-catalog-child-theme
-Child theme for the UH Manoa Courses Catalog
+# uh-its-wp-system-child-theme
+Child theme for the UH System VP Admin Office
 
 
-This theme was developed for the Mānoa Catalog Office by Information Technology Services (ITS). Designed to be easily maintained and searchable, it has search functionality for the entire site as well as a course-specific search. It is a child theme of the Manoa theme (https://github.com/UniversityOfHawaii/uh-its-wp-manoa-dept-theme) and so both themes need to be installed.
+This theme was developed for the VPA by Information Technology Services (ITS) & Heaven Saenz. It is a child theme of the Manoa theme (https://github.com/UniversityOfHawaii/uh-its-wp-manoa-dept-theme) so both themes need to be installed.
