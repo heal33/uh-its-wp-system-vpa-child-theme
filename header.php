@@ -30,7 +30,7 @@ if ( $site_description && ( is_home() || is_front_page() ) ) {
 
     // Add a page number if necessary:
 if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-    echo esc_html( ' | ' . sprintf( __( 'Page %s', 'manoa2018' ), max( $paged, $page ) ) );
+    echo esc_html( ' | ' . sprintf( __( 'Page %s', 'system2018' ), max( $paged, $page ) ) );
 }
 
     ?></title>
@@ -54,7 +54,7 @@ if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
 
 <body <?php body_class(); ?>>
 <header id="top">
-  <?php get_template_part('uhm-header'); ?>
+  <?php get_template_part('uh-header'); ?>
   <div id="header_mid">
     <div class="container">
       <a class="site-name-description" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -110,16 +110,16 @@ if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
   </nav>
   <div id="department_name" style="background-image: url(<?php header_image(); ?>)">
     <div class="container">
-      <?php manoa2018_get_breadcrumbs(); ?>
+      <?php system2018_get_breadcrumbs(); ?>
       <h1 class="entry-title">
         <?php if ( is_post_type_archive('courses') ) { ?>
           <?php if(get_search_query()) {
-            printf( __( 'Course Search Results for: %s', 'manoa2018' ), '<span>' . get_search_query() . '</span>' ); ?>
+            printf( __( 'Course Search Results for: %s', 'system2018' ), '<span>' . get_search_query() . '</span>' ); ?>
           <?php } else { ?>
             Search Courses
           <?php } ?>
         <?php } elseif( is_search() ) { ?>
-          <?php printf( __( 'Search Results for: %s', 'manoa2018' ), '<span>' . get_search_query() . '</span>' ); ?>
+          <?php printf( __( 'Search Results for: %s', 'system2018' ), '<span>' . get_search_query() . '</span>' ); ?>
         <?php } elseif( is_archive() ) { ?>
           <?php echo get_the_archive_title(); ?>
           <?php //echo single_term_title(); ?>

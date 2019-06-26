@@ -9,7 +9,7 @@
  */
 function uhm_catalog_enqueue_styles() {
 
-  $parent_style = 'manoa2018_style';
+  $parent_style = 'system2018_style';
 
   wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
   wp_enqueue_style( 'uhm_catalog_style',
@@ -215,8 +215,8 @@ add_filter( 'get_the_archive_title', function ($title) {
 /**
  * edit breadcrumbs
  */
-if ( ! function_exists( 'manoa2018_get_breadcrumbs') ) :
-function manoa2018_get_breadcrumbs() {
+if ( ! function_exists( 'system2018_get_breadcrumbs') ) :
+function system2018_get_breadcrumbs() {
 
     // Settings
     $separator          = '<span class="fa fa-angle-right" aria-hidden="true" title="breadcrumb-separator"></span>';
@@ -459,7 +459,7 @@ add_action( 'init', 'add_categories_to_pages' );*/
 add_action( 'after_setup_theme', 'remove_parent_theme_actions', 0 );
 
 function remove_parent_theme_actions(){
-    remove_action('widgets_init', 'manoa2018_widgets_init');
+    remove_action('widgets_init', 'system2018_widgets_init');
 }
 
 
@@ -471,9 +471,9 @@ function my_widgets_init()
     // Area 1, located at the top of the sidebar.
     register_sidebar(
         array(
-            'name'          => __( 'Primary Widget Area', 'manoa2018' ),
+            'name'          => __( 'Primary Widget Area', 'system2018' ),
             'id'            => 'primary-widget-area',
-            'description'   => __( 'Add widgets here to appear in your sidebar.', 'manoa2018' ),
+            'description'   => __( 'Add widgets here to appear in your sidebar.', 'system2018' ),
             'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
             'after_widget'  => '</li>',
             'before_title'  => '<h3 class="widget-title">',
@@ -484,9 +484,9 @@ function my_widgets_init()
     // Area 2, located in the footer. Empty by default.
     register_sidebar(
         array(
-            'name'          => __( 'Footer Widget Area', 'manoa2018' ),
+            'name'          => __( 'Footer Widget Area', 'system2018' ),
             'id'            => 'footer-widget-area',
-            'description'   => __( 'An optional widget area for your site footer.', 'manoa2018' ),
+            'description'   => __( 'An optional widget area for your site footer.', 'system2018' ),
             'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
             'after_widget'  => '</li>',
             'before_title'  => '<h3 class="widget-title">',
@@ -497,9 +497,9 @@ function my_widgets_init()
         // Area 3, located on the homepage. Empty by default.
     register_sidebar(
         array(
-            'name'          => __( 'Homepage Widget Area', 'manoa2018' ),
+            'name'          => __( 'Homepage Widget Area', 'system2018' ),
             'id'            => 'homepage-widget-area',
-            'description'   => __( 'An optional widget area for your site homepage.', 'manoa2018' ),
+            'description'   => __( 'An optional widget area for your site homepage.', 'system2018' ),
             'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
             'after_widget'  => '</li>',
             'before_title'  => '<span class="widget-title">',
@@ -510,9 +510,9 @@ function my_widgets_init()
         // Area 4, located on the homepage above Area 3. Empty by default.
         register_sidebar(
             array(
-                'name'          => __( 'Homepage Widget Area Featured', 'manoa2018' ),
+                'name'          => __( 'Homepage Widget Area Featured', 'system2018' ),
                 'id'            => 'homepage-widget-area-2',
-                'description'   => __( 'An optional widget area for your site homepage.', 'manoa2018' ),
+                'description'   => __( 'An optional widget area for your site homepage.', 'system2018' ),
                 'before_widget' => '<div class="col-md-12">',
                 'after_widget'  => '</div>',
                 'before_title'  => '<h3 class="widget-title">',

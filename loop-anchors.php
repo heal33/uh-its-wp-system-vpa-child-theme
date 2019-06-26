@@ -28,13 +28,13 @@ if ( have_posts() ) {
             <?php
             wp_link_pages(
               array(
-                'before' => '<div class="page-link">' . __( 'Pages:', 'manoa2018' ),
+                'before' => '<div class="page-link">' . __( 'Pages:', 'system2018' ),
                 'after'  => '</div>',
               )
             );
             ?>
 
-            <?php edit_post_link( __( 'Edit', 'manoa2018' ), '<span class="edit-link">', '</span>' ); ?>
+            <?php edit_post_link( __( 'Edit', 'system2018' ), '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-content -->
 
           <div class="anchors" aria-hidden="true">

@@ -1,15 +1,15 @@
 /*
  Theme Name:   UH System VPA
  Theme URI:    https://www.hawaii.edu/its/
- Description:  Child theme of Manoa2018
+ Description:  Child theme of system2018
  Author:       UH ITS, Heaven Saenz
  Author URI:   https://www.hawaii.edu/its/
- Template:     manoa2018
+ Template:     system2018
  Version:      1.0.9
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         manoa, vpa
- Text Domain:  manoa2018-vpa
+ Tags:         system, vpa
+ Text Domain:  system2018-vpa
 */
 
 /* anchor links page template */
@@ -226,6 +226,7 @@ body header {
 
 .site-name-description h1 > .uhm-title {
   font-size: .7em;
+  font-weight: 500;
   position: relative;
 }
 

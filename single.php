@@ -9,7 +9,7 @@ get_header(); ?>
     <div id="main_content">
       <div id="content" role="main" class="container">
 
-        <?php manoa2018_get_breadcrumbs(); ?>
+        <?php system2018_get_breadcrumbs(); ?>
 
         <?php
         /*

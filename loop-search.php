@@ -7,17 +7,17 @@
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
   <div id="nav-above" class="navigation">
-    <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'manoa2018' ) ); ?></div>
-    <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'manoa2018' ) ); ?></div>
+    <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'system2018' ) ); ?></div>
+    <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'system2018' ) ); ?></div>
   </div><!-- #nav-above -->
 <?php endif; ?>
 
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
   <div id="post-0" class="post error404 not-found">
-    <h1 class="entry-title"><?php _e( 'Not Found', 'manoa2018' ); ?></h1>
+    <h1 class="entry-title"><?php _e( 'Not Found', 'system2018' ); ?></h1>
     <div class="entry-content">
-      <p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'manoa2018' ); ?></p>
+      <p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'system2018' ); ?></p>
       <?php get_search_form(); ?>
     </div><!-- .entry-content -->
   </div><!-- #post-0 -->
@@ -34,7 +34,7 @@ while ( have_posts() ) :
         <h2 class="entry-title">
           <a href="<?php the_permalink(); ?>" rel="bookmark">
             <?php the_title(); ?>
-            <?php //manoa2018_posted_on(); ?>
+            <?php //system2018_posted_on(); ?>
             <?php
             if(basename(get_page_template()) === 'page-academic-group.php') {
               /*foreach (get_the_category() as $category){
@@ -67,13 +67,13 @@ while ( have_posts() ) :
         } ?>
         <div class="entry-meta">
           <?php if( 'courses' == get_post_type()) : ?>
-            <?php manoa2018_categories(); ?>
+            <?php system2018_categories(); ?>
           <?php endif; ?>
         </div>
         <?php
         wp_link_pages(
           array(
-            'before' => '<div class="page-link">' . __( 'Pages:', 'manoa2018' ),
+            'before' => '<div class="page-link">' . __( 'Pages:', 'system2018' ),
             'after'  => '</div>',
           )
         );
@@ -90,7 +90,7 @@ while ( have_posts() ) :
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
   <div id="nav-below" class="navigation">
-    <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'manoa2018' ) ); ?></div>
-    <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'manoa2018' ) ); ?></div>
+    <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'system2018' ) ); ?></div>
+    <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'system2018' ) ); ?></div>
   </div><!-- #nav-below -->
 <?php endif; ?>
