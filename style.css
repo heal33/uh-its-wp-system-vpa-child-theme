@@ -72,12 +72,6 @@ a:visited {
   color: #907139 !important;
 }
 
-.homepage-widgets li.widget-container {
-  background-color: #f7f7f7;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
 .homepage-widgets-featured {
   margin-bottom: 40px;
 }
@@ -272,6 +266,8 @@ body header {
   padding-top: 24px;
 }
 
+
+
 @media only screen and (max-width: 760px) {
   #header_sitename {
     font-size: 1.4em;
@@ -438,16 +434,14 @@ nav#breadcrumbs
   margin-top: 0;
 }
 
-ul.homepage-widgets li {
-  border-bottom: 1px solid #d4d4d4;
-}
 
 ul.homepage-widgets li ul li:last-child {
   border-bottom: none;
 }
 
 ul.homepage-widgets li ul li {
-  padding: 12px 20px;
+  padding: 12px 0px;
+  border-top: 1px solid #e7e7e7;
 }
 
 
@@ -459,10 +453,8 @@ ul.homepage-widgets li ul li {
 span.widget-title {
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
-  background-color: #4d4d4d;
   display:block;
-  padding: 12px 20px;
+  padding: 12px 0px;
   /* text-transform: uppercase; */
 }
 
@@ -518,6 +510,10 @@ span.widget-title {
     column-count: 3;
     column-gap: 30px;
   }
+  #header_mid .container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .page-template-page-children .entry-content .children {
   display: none;
@@ -538,15 +534,26 @@ span.widget-title {
 }
 .page-template-page-children ul.child-pages > li {
   /*white-space: nowrap;*/
+box-shadow: 0 1px 1px 0 rgba(60,64,67,.08),0 1px 3px 1px rgba(60,64,67,.16);
+border: 1px solid #f7f7f7;
 }
 ul.child-pages a {
   color: #333;
+  background-color: #f7f7f7;
   text-decoration: none;
+  transition: background-color .1s;
+  padding: 20px;
+  display:block;
+  text-align: center;
+  text-transform: uppercase;
 }
+
 ul.child-pages a:hover,
 ul.child-pages a:focus,
 ul.child-pages a:active {
   text-decoration: underline;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 3px 1px rgba(60,64,67,.2),0 2px 8px 4px rgba(60,64,67,.1);
 }
 .page-template-page-children ul.child-pages > li > a {
   font-weight: 700;
@@ -588,6 +595,7 @@ ul.child-pages a:active {
   }
 }
 
+
 .home .featured-image .featured-links {
     background: #024731;
     color: #fff;
@@ -598,6 +606,7 @@ ul.child-pages a:active {
     z-index: 10;
     width: 100%;
     line-height: 1.4;
+    display:none; /* featured links disabled */
 }
 .home .featured-image .featured-links a {
   color: inherit;
