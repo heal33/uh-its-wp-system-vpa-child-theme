@@ -446,7 +446,7 @@ ul.homepage-widgets li ul li:last-child {
 }
 
 ul.homepage-widgets li ul li {
-  padding: 12px 0px;
+  padding: 10px 0px;
 }
 
 
@@ -456,12 +456,13 @@ ul.homepage-widgets li ul li {
 }
 
 span.widget-title {
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   display:block;
   padding: 12px 0;
   color: #333;
-  border-bottom:2px solid #a5875c;
+  border-bottom:1px solid #ddd;
+  margin-bottom:5px;
   /* text-transform: uppercase; */
 }
 
