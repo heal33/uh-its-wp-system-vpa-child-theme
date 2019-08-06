@@ -9,7 +9,7 @@ get_header(); ?>
 
     <div class="featured-image">
       <?php if (get_theme_mod('home_banner') !='') : ?>
-        <img src="<?php echo get_theme_mod('home_banner'); ?>" alt="UH students">
+        <!-- <img src="<?php echo get_theme_mod('home_banner'); ?>" alt="UH students"> -->
       <?php endif; ?>
       <div class="featured-links">
         <div class="container">
@@ -29,7 +29,7 @@ get_header(); ?>
       </div>
     </div>
 
-    <div id="page-title" class="full-width-section">
+    <div id="page-title" class="full-width-section" style="background-image: url('<?php echo get_theme_mod('home_banner'); ?>');">
       <div class="container page-title-wrapper">
           <h2>Welcome to the Office of Procurement Management</h2>
           <span>The central system office for procurement policy, guidance, and process</span>

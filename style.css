@@ -29,12 +29,11 @@ a:visited {
 }
 
 .home #content h3{
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 #page-title {
   background-color: #000;
-  background-image: url("http://192.168.10.80/wp-content/themes/wp-theme-vpa-web/images/banner.jpg");
   color: #fff;
   padding: 42px 0;
   position: relative;
@@ -74,10 +73,7 @@ a:visited {
 
 .homepage-widgets-featured {
   margin-bottom: 40px;
-  margin-top: 20px;
-}
-.homepage-widgets-featured h3 {
-
+  margin-top: 10px;
 }
 
 .homepage-widgets-featured img {
@@ -86,6 +82,14 @@ a:visited {
 
 #content h1, #content h2, #content h3 {
   color: #907139;
+}
+
+.widget-container ul li {
+  list-style: circle;
+}
+
+.widget-container ul {
+  padding-left: 40px;
 }
 
 /**/
@@ -432,7 +436,9 @@ nav#breadcrumbs
   
 }
 
-.home #main_content {
+ul.homepage-widgets {
+  background-color: #f7f7f7;
+  padding: 10px 12px;
 }
 
 
@@ -446,7 +452,7 @@ ul.homepage-widgets li ul li:last-child {
 }
 
 ul.homepage-widgets li ul li {
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 
@@ -456,14 +462,14 @@ ul.homepage-widgets li ul li {
 }
 
 span.widget-title {
-  font-size: 1.2rem;
+  font-size:1em;
   font-weight: 600;
   display:block;
   padding: 12px 0;
   color: #333;
   border-bottom:1px solid #ddd;
   margin-bottom:5px;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 
 .homepage-widgets-featured .textwidget{
@@ -540,33 +546,29 @@ span.widget-title {
   margin-left: 0;
   padding-left: 20px;
 }
-.page-template-page-children ul.child-pages > li {
-  /*white-space: nowrap;*/
-border: 1px solid #ddd;
-display: block;
-}
+
+
 ul.child-pages a {
   color: #333;
   font-weight: normal;
-  background-color: #f3f3f3;
   text-decoration: none;
-  padding: 25px;
-  display:block;
+  padding: 20px;
+  display: block;
   text-align: center;
-  text-transform: uppercase;
-}
-
-.page-template-page-children ul.child-pages > li:hover {
-  border: 1px solid #a5875c;
+  border: 1px solid #eee;
+  display: block;
+  border-radius:3px;
+  background-color: #f7f7f7;
+  
 }
 
 ul.child-pages a:hover,
 ul.child-pages a:focus,
 ul.child-pages a:active {
   text-decoration: underline;
-  background-color: #eee;
-
+  border: 1px solid #907139;
   }
+
 .page-template-page-children ul.child-pages > li > a {
   font-weight: 700;
 }
