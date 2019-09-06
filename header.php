@@ -49,6 +49,17 @@ if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
 <!-- load font awesome icons -->
 <script src="https://use.fontawesome.com/bfcbe1540c.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127382665-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127382665-4');
+</script>
+
 <?php wp_head(); ?>
 </head>
 
