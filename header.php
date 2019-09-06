@@ -59,12 +59,8 @@ if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
     <div class="container">
       <a class="site-name-description" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <div class="image">
-          <img id="header-seal" src="<?php echo get_stylesheet_directory_uri(); ?>/images/UH-logo.svg" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/UH-logo.svg 1x, <?php echo get_stylesheet_directory_uri(); ?>/images/UH-logo.svg 2x" alt="University of Hawai&#699;i at M&#257;noa" />
+          <img id="header-seal" src="<?php echo get_stylesheet_directory_uri(); ?>/images/OPM-logo.jpg" alt="University of Hawai&#699;i Office of Procurement Management" />
         </div>
-        <h1 id="header_sitename">
-          <div class="uhm-title"><span class="uh">University of Hawai&#8216;i</span><span class="registered-trademark">&reg;</span> <span class="manoa">System</span></div>
-          <div class="site-title"><?php bloginfo( 'name' ); ?></div>
-        </h1>
       </a>
     </div>
   </div>
