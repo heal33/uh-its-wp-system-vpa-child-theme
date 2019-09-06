@@ -32,7 +32,7 @@ get_header(); ?>
     <div id="page-title" class="full-width-section" style="background-image: url('<?php echo get_theme_mod('home_banner'); ?>');">
       <div class="container page-title-wrapper">
           <h2>Welcome to the Office of Procurement Management</h2>
-          <span>The central system office for procurement policy, guidance, and process</span>
+          <span>The Central System Office for Procurement Policy, Guidance, and Process</span>
         </div>
     </div><!-- section -->
 
