@@ -191,6 +191,9 @@ body header {
   #header_mid {
     height: 110px;
   }
+  .site-name-description .image img {
+    height: 60px;
+  }
 }
 
 .site-name-description {
@@ -218,10 +221,6 @@ body header {
   box-sizing: border-box;
   height: auto;
   margin-right: 20px;
-}
-
-.site-name-description .image img {
-  height: 60px;
 }
 
 .site-name-description h1 > div {
@@ -289,9 +288,9 @@ body header {
     max-width: 100%;
   }
 
-  .site-name-description .image img {
+  /* .site-name-description .image img {
     height: 100%;
-  }
+  } */
   
   #header_btm_content {
     text-align: left;
@@ -632,6 +631,8 @@ ul.child-pages a:active {
     flex: 1;
   }
 }
+
+
 
 
 .home .featured-image .featured-links {
