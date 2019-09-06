@@ -33,12 +33,16 @@ a:visited {
 }
 
 #page-title {
-  background-color: #000;
-  color: #fff;
+  color: #1d1d1d;
+
   padding: 42px 0;
   position: relative;
   background-size: cover;
   z-index: 2;
+}
+
+#page-title h2 {
+  font-weight: 600;
 }
 
 #page-title .container {
@@ -47,7 +51,7 @@ a:visited {
 }
 
 #page-title:after {
-  background-color: #000;
+  background-color: #f7f7f7;
   content: '';
   display: block;
   height: 100%;
@@ -214,7 +218,10 @@ body header {
   box-sizing: border-box;
   height: auto;
   margin-right: 20px;
-  width: 60px;
+}
+
+.site-name-description .image img {
+  height: 60px;
 }
 
 .site-name-description h1 > div {
@@ -277,15 +284,16 @@ body header {
   #header_sitename {
     font-size: 1.4em;
   }
-  a.site-name-description {
-    display: flex;
-    justify-content: center;
+
+  #header_mid {
+    max-width: 100%;
   }
-  .site-name-description .image {
-    flex-basis: 50px;
-    margin-right: 10px;
-    width: 50px;
+
+  .site-name-description .image img {
+    height: 100%;
+    max-width: 500px;
   }
+  
   #header_btm_content {
     text-align: left;
   }
