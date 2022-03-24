@@ -29,13 +29,6 @@ get_header(); ?>
       </div>
     </div>
 
-    <div id="page-title" class="full-width-section" style="background-image: url('<?php echo get_theme_mod('home_banner'); ?>');">
-      <div class="container page-title-wrapper">
-          <h2>Welcome to the Office of Procurement Management</h2>
-          <span>The Central System Office for Procurement Policy, Guidance, and Process</span>
-        </div>
-    </div><!-- section -->
-
     <div id="main_content">
       <div class="container">
         <div id="content" role="main">
