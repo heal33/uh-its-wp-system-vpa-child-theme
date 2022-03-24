@@ -12,6 +12,9 @@
  Text Domain:  system2018-vpa
 */
 
+html {
+  font-size: 15px;
+}
 /* anchor links page template */
 
 /* temp styles */
@@ -70,6 +73,11 @@ a:visited {
   margin-bottom: .5rem;
   text-transform: uppercase;
 }
+
+#header_top {
+  font-size: 0.923em;
+}
+
 
 .home #content h3{
   color: inherit;
@@ -130,6 +138,22 @@ a:visited {
   padding-left: 10px;
 }
 
+/* BLACK HEADER STYLES */
+
+#header_top_content {
+  padding: 12px 15px; /* reset */
+  max-width: 1140px;  /* reset */
+}
+
+#header_top_content > ul li {
+  padding-bottom: 0;
+  font-size: 0.95em;
+}
+
+#header_smrow {
+  padding-bottom: 0;  /* reset */
+}
+
 .single #content {
   padding-top: 24px;
 }
@@ -179,20 +203,28 @@ body header {
   border-bottom: none;
 }
 
-#header_mid {
-  padding-top: 16px;
-}
 @media only screen and (max-width: 760px) {
   #header_mid {
     margin-top: 0;
   }
 }
 @media only screen and (min-width: 761px) {
-  #header_mid {
-    height: 110px;
+  #ovpa_header_mid {
+    padding: 0;
   }
-  .site-name-description .image img {
-    height: 60px;
+  .ovpa_header_mid_inner {
+    padding-top: 25px;
+  }
+  .image .custom-logo-link img {
+    height: 67px;
+    width: auto;
+  }
+  .search-form-container {
+    position:initial;
+    height: auto;
+  }
+  .search-form-container form {
+    margin-top: 0;
   }
 }
 
@@ -306,7 +338,7 @@ body.home #department_name {
 }
 
 #header_btm {
-  border-top: 1px solid #e7e7e7;
+  padding: 0;
 }
 
 #department_name {

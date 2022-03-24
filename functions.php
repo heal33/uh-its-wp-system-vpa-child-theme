@@ -187,7 +187,20 @@ function uhm_catalog_customize_register( $wp_customize ) {
     ) ) );
 }
 add_action( 'customize_register', 'uhm_catalog_customize_register', 10 );
+
+/**
+ * Theme setup
+ */
 add_theme_support( 'custom-header' );
+
+/**
+* Enable custom logo
+* https://developer.wordpress.org/themes/functionality/custom-logo/
+*/
+add_theme_support( 'custom-logo', array(
+    'header-text'          => array( 'site-title', 'site-description' ),
+    'unlink-homepage-logo' => true, 
+) );
 
 function my_customize_register() {
 global $wp_customize;
